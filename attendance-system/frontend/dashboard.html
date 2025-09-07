@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Attendance System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Attendance System</div>
+        <input type="text" id="globalSearch" placeholder="Global Search...">
+        <div class="nav-icons">
+            <span id="notifications">🔔</span>
+            <a href="#" id="logout">Sign Out</a>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="students.html">Students</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="qr-generator.html">QR Generator</a>
+        <a href="scanner.html">Scanner</a>
+        <a href="admin.html">Admin</a>
+    </div>
+    <main class="main-content">
+        <h1>Dashboard</h1>
+        <div class="stats">
+            <div class="stat-card">Total Students: <span id="totalStudents">0</span></div>
+            <div class="stat-card">Total Teachers: <span id="totalTeachers">0</span></div>
+            <div class="stat-card">HUMSS: <span id="humssCount">0</span></div>
+            <div class="stat-card">ABM: <span id="abmCount">0</span></div>
+            <div class="stat-card">CSS: <span id="cssCount">0</span></div>
+            <div class="stat-card">SMAW: <span id="smawCount">0</span></div>
+            <div class="stat-card">AUTO: <span id="autoCount">0</span></div>
+            <div class="stat-card">EIM: <span id="eimCount">0</span></div>
+        </div>
+        <div class="recent-activity">
+            <h2>Recent Attendance</h2>
+            <table id="recentAttendanceTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
