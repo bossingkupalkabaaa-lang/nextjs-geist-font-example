@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers - Attendance System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Attendance System</div>
+        <input type="text" id="globalSearch" placeholder="Global Search...">
+        <div class="nav-icons">
+            <span id="notifications">🔔</span>
+            <a href="#" id="logout">Sign Out</a>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="students.html">Students</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="qr-generator.html">QR Generator</a>
+        <a href="scanner.html">Scanner</a>
+        <a href="admin.html">Admin</a>
+    </div>
+    <main class="main-content">
+        <h1>Teachers</h1>
+        <div class="actions">
+            <button id="addTeacherBtn">Add Teacher</button>
+            <button id="exportBtn">Export CSV</button>
+            <button id="importBtn">Import CSV</button>
+        </div>
+        <table id="teachersTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <h2>Add Teacher</h2>
+            <form id="addTeacherForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="position" placeholder="Position" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/teachers.js"></script>
+</body>
+</html>
