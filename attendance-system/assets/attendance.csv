@@ -1,0 +1,4 @@
+Date,TimeIn,TimeOut,Name,Strand,Remarks
+2023-10-01,08:00:00,,John Doe,humss,Present
+2023-10-01,08:15:00,,Jane Smith,abm,Late
+2023-10-01,,,,Bob Johnson,css,Absent
